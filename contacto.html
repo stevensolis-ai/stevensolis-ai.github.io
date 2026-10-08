@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto · Encuadernación Vallecillo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <img src="carpeta%204.png" alt="Logo Encuadernación Vallecillo" class="brand-logo">
+            <div class="header-text"><span class="sub-title">Arte &amp; Tradición</span></div>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="catalogo.html" class="nav-link">Catálogo</a>
+            <a href="elaboracion.html" class="nav-link">Elaboración</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2 class="page-title">Contáctenos</h2>
+            <div class="contact-card">
+                <p>¿Tienes una graduación próximamente? Cotiza tus carpetas de diploma con nosotros.</p>
+                <div class="contact-info">
+                    <a href="tel:85373336">📞 85373336 · Mercedes Vallecillo (CLARO)</a>
+                    <a href="tel:86671170">📞 86671170 · Ramon Vallecillo (CLARO)</a>
+                    <a href="tel:85840832">📞 85840832 · Joselin Vallecillo (TIGO)</a>
+                    <a href="mailto:joselinvalle_83@gmail.com">📧 joselinvalle_83@gmail.com</a>
+                </div>
+                <a href="index.html" class="secondary-button">Volver al inicio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Encuadernación Vallecillo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll('.nav-link');
+            links.forEach(function(link) {
+                if(link.getAttribute('href') === 'contacto.html') {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

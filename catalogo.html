@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo · Encuadernación Vallecillo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <img src="carpeta%204.png" alt="Logo Encuadernación Vallecillo" class="brand-logo">
+            <div class="header-text"><span class="sub-title">Arte &amp; Tradición</span></div>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="catalogo.html" class="nav-link">Catálogo</a>
+            <a href="elaboracion.html" class="nav-link">Elaboración</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="page-title">Nuestras Creaciones</h2>
+        <p class="section-desc">Diseños exclusivos para promociones y colegios, elaborados con los más altos estándares.</p>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="carpeta%202.jpeg" alt="Carpeta Colegio Agustiniano 2025" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3>Colegio Agustiniano</h3>
+                    <p class="product-desc">LXIV Promoción de Sexto Grado 2025. Acabado negro premium con detalles en oro.</p>
+                    <span class="product-tag">Promoción 2025</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="carpeta%203.jpeg" alt="Carpeta Colegio San Francisco de Asís" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3>San Francisco de Asís</h3>
+                    <p class="product-desc">Promoción 2025, Matiguás. Diseño institucional en carpeta azul noche con relieve dorado.</p>
+                    <span class="product-tag">Promoción 2025</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="carpeta%20roja.jpeg" alt="Carpeta rojo vino del Colegio Bautista El Calvario" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h3>Colegio El Calvario</h3>
+                    <p class="product-desc">Nuestro diseño en color rojo vino con el logotipo del centro en dorado el color ideal para ti.</p>
+                    <span class="product-tag">Destacado</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Encuadernación Vallecillo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll('.nav-link');
+            links.forEach(function(link) {
+                if(link.getAttribute('href') === 'catalogo.html') {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

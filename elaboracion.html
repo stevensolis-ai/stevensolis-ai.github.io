@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elaboración · Encuadernación Vallecillo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <img src="carpeta%204.png" alt="Logo Encuadernación Vallecillo" class="brand-logo">
+            <div class="header-text"><span class="sub-title">Arte &amp; Tradición</span></div>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="catalogo.html" class="nav-link">Catálogo</a>
+            <a href="elaboracion.html" class="nav-link">Elaboración</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="page-title">Proceso de Elaboración</h2>
+        
+        <!-- TEXTO ELEGANTE INTRODUCTORIO (El primer texto grande) -->
+        <div class="intro-section">
+            <p>Nuestras carpetas para diplomas son elaboradas con materiales de alta calidad para garantizar resistencia, elegancia y una excelente presentación. Cada carpeta pasa por un proceso de diseño, corte, forrado y ensamblaje, seguido del grabado personalizado con el nombre, logotipo o escudo de la institución en acabado dorado. Cuidamos cada detalle para ofrecer un producto que proteja y realce el valor de cada diploma.</p>
+        </div>
+
+        <!-- CUADROS CON ANIMACIÓN -->
+        <div class="elaboracion-grid">
+            
+            <div class="elaboracion-card">
+                <h3>📐 Diseño y planificación</h3>
+                <p>Se define el tamaño, color y estilo de la carpeta según las necesidades de cada institución.</p>
+            </div>
+
+            <div class="elaboracion-card">
+                <h3>✂️ Corte de materiales</h3>
+                <p>Se cortan con precisión el cartón, el forro y los materiales interiores para asegurar un ajuste perfecto.</p>
+            </div>
+
+            <div class="elaboracion-card">
+                <h3>🖇️ Forrado y ensamblaje</h3>
+                <p>Cada pieza se une cuidadosamente para obtener una carpeta firme, resistente y de excelente presentación.</p>
+            </div>
+
+            <div class="elaboracion-card">
+                <h3>✨ Personalización</h3>
+                <p>Realizamos grabados en acabado dorado con el nombre, logotipo o escudo de la institución, logrando un diseño exclusivo y elegante.</p>
+            </div>
+
+            <!-- Bloque de Control de Calidad -->
+            <div class="elaboracion-card" style="grid-column: 1 / -1;">
+                <h3>🔍 Control de calidad</h3>
+                <p>Antes de su entrega, cada carpeta es revisada para garantizar que cumpla con nuestros estándares de calidad.</p>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- SECCIÓN DE VENTAJAS -->
+        <div class="elaboracion-grid">
+            <div class="elaboracion-card" style="grid-column: 1 / -1; text-align: left;">
+                <h3 style="text-align: center; font-size: 1.8rem;">¿Por qué elegir nuestras carpetas?</h3>
+                <ul>
+                    <li>✔️ Materiales de alta calidad.</li>
+                    <li>✔️ Acabados elegantes y profesionales.</li>
+                    <li>✔️ Grabado personalizado en color dorado.</li>
+                    <li>✔️ Diseños adaptados a cada institución.</li>
+                    <li>✔️ Productos resistentes y duraderos.</li>
+                    <li>✔️ Atención personalizada y compromiso con cada pedido.</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Encuadernación Vallecillo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll('.nav-link');
+            links.forEach(function(link) {
+                if(link.getAttribute('href') === 'elaboracion.html') {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
